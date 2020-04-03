@@ -9,5 +9,10 @@
 - 什么功能内置，什么交给社区去做
   - react做的事情很少，很多都交给社区去做，vue很多东西都是内置的，写起来确实方便一些，
   比如 redux的combineReducer就对应vuex的modules，vuex的mutation是直接改变的原始数据，而redux的reducer是返回一个全新的state，所以redux结合immutable来优化性能，vue不需要。
+- vue路由
+  - 动态路由传值    path:"/home/:id/name"   this.$route.params
+  - query传值   ?   this.$route.query
+  - 路由解耦   props :true 
+  - 编程式导航    this.$router.push  ({path:"/home",query:{}})
 
 
